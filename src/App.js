@@ -28,8 +28,6 @@ class App extends React.Component {
               id: snapSnot.id,
               ...snapSnot.data()
             }
-          }, () => {
-            console.log(this.state);
           });
           
         });

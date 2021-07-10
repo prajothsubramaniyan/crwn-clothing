@@ -12,8 +12,7 @@ const config = {
     measurementId: "G-E02YDJ6Z6W"
 };
 
-export const createUserProfileDocument = async (userAuth, additionalData) => {
-    debugger;
+export const createUserProfileDocument = async (userAuth, additionalData) => {    
     if(!userAuth) return;
 
     const userRef = firestore.doc(`users/${userAuth.uid}`);
